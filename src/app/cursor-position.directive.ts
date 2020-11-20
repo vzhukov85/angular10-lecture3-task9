@@ -12,6 +12,7 @@ export class CursorPositionDirective {
     const pos = value.indexOf('_');
     if (pos > 0) {
       this.elementRef.nativeElement.selectionStart = pos;
+      this.elementRef.nativeElement.selectionEnd = pos;
     }
   }
 }

@@ -1,9 +1,9 @@
 <div>
   <mat-form-field>
-    <input type="text" [(ngModel)]="name" placeholder="Имя"/>
+    <input type="text" cursorPosition [(ngModel)]="date" [textMask] = "{mask: maskDate}" placeholder="Дата"/>
   </mat-form-field>
   <mat-form-field>
-    <input type="text" cursorPosition [(ngModel)]="phone" [textMask] = "{mask: mask}" placeholder="Телефон"/>
+    <input type="text" cursorPosition [(ngModel)]="phone" [textMask] = "{mask: maskPhone}" placeholder="Телефон"/>
   </mat-form-field>
 </div>
 
