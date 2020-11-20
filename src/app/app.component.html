@@ -1,10 +1,12 @@
 <div>
-  <mat-form-field>
-    <input type="text" cursorPosition [(ngModel)]="date" [textMask] = "{mask: maskDate}" placeholder="Дата"/>
+  <mat-form-field appearance="fill">
+    <mat-label>Дата</mat-label>
+    <input matInput type="text" cursorPosition [(ngModel)]="date" [textMask] = "{mask: maskDate}" placeholder="Дата"/>
   </mat-form-field>
-  <mat-form-field>
-    <input type="text" cursorPosition [(ngModel)]="phone" [textMask] = "{mask: maskPhone}" placeholder="Телефон"/>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Телефон</mat-label>
+    <input matInput type="text" cursorPosition [(ngModel)]="phone" [textMask] = "{mask: maskPhone}" />
   </mat-form-field>
 </div>
-
 
